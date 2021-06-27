@@ -1,0 +1,387 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%; /* hierdoor 1rem === 10px */
+  box-sizing: border-box;
+  background-color: #EFF4F4; 
+}
+body{
+  font-size: 1.8rem;
+  color: #1f1d1d90;
+}
+.text-red{
+  color:#FF2D00;
+}
+a{
+  color:#000;
+  text-decoration: none;
+}
+a:hover{
+  color:#918A8D;
+}
+.button{
+  width: 20rem;
+  padding: 1rem;
+  background-color: #7fffd4;
+  text-align:center;
+  border-radius: 1rem;
+}
+.button:hover{
+  background-color:#88EAC9;
+}
+
+/* grid */
+.grid{ 
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1.5rem 1fr 1.5rem;
+  grid-template-rows: 27rem 6rem 1fr 10rem 10rem;
+  grid-gap: 0.3rem;
+  grid-template-areas: 
+  ". h ."
+  ". n ."
+  ". m ." 
+  ". s ."
+  ". f .";
+}
+header{
+  grid-area: h;
+}
+nav{
+  grid-area: n;
+}
+main{
+  grid-area: m;
+}
+.social-media{
+  grid-area: s;
+}
+footer{ 
+  grid-area: f;
+}
+
+/* header */
+header h1{
+  font-size: 4.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+header img{
+  width: 100%;
+  object-fit: cover;
+  max-height: 18rem;
+}
+
+/* navbar */
+.navbar{
+  margin-top:1rem;
+  text-align: center;
+}
+.navbar li{
+  display: inline;
+  font-size: 2.5rem;
+  margin: 1rem;
+  list-style:none;
+}
+
+/* main */
+main img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+main h3{
+  margin-bottom: 0.6rem;
+}
+
+/* main container-01 */
+main .flexcontainer-01{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6rem 3rem; 
+}
+.flexitem-0101{
+  flex: 2;
+  margin-right: 2rem;
+}
+.flexitem-0102{
+  flex: 1;
+}
+.flexitem-0102 img{
+  border: 0.1rem solid #000;;
+  border-radius: 20rem; 
+} 
+
+
+.bigscreen{
+  display: none;
+}
+
+/* main container-02 */
+main .flexcontainer-02{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 9rem 3rem 10rem; 
+}
+
+/* main container-03 */
+main .flexcontainer-03{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  margin: 7rem 0 2rem;
+}
+main .flexcontainer-03 li{
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+/* button */
+.button-container{
+  width: 20rem;
+  margin: 0 auto 20rem;
+}
+
+/* social-media*/
+.social-flexcontainer{
+  display: flex;
+  margin-top:2rem;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+}
+.social-media img{
+  height: 5rem;
+}
+.social-media h3{
+  text-align: center;
+}
+.social-media img:hover{
+  height: 4.9rem;
+}
+
+/* footer*/
+footer .footer-flexcontainer{
+  font-size: 1rem ;
+  height: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content:flex-end;
+  justify-content: space-around;
+  padding: 0.2rem;
+}
+footer{
+  background-color: #222;
+  color: #c4c7c5;
+}
+footer a{
+  color: #c4c7c5;
+}
+.footer{
+  width: 20rem;
+  margin: 2rem auto 0;
+  text-align: center;
+  font-size: 2rem;
+}
+.footer a {
+  font-size: 1.8rem;
+}
+.footer-flexcontainer div{
+  font-size: 1rem;
+}
+
+
+
+
+
+
+/* page 02 smaken */
+.smakenlijst{
+  width: 30rem;
+  margin:  7rem auto 3rem;
+  border: 0.1rem solid #000;
+  border-radius: 1rem;
+  padding: 1rem; 
+}
+.smakenlijst h3{
+  text-align: center;
+}
+.smakenlijst ul {
+  list-style: none;
+  list-style-image: url(img/list-style_02.png);
+  list-style-position: inside;
+  margin-left:auto;
+} 
+
+
+/* page 03 contact */
+.adresbox{
+  padding: 1rem;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  margin: 7rem auto;
+}
+.form-container{
+  border: 1px solid #000;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 7rem auto;  
+}
+.form-container h2{
+  padding: 1rem;
+  text-align: center;
+}
+.name-row{
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap; 
+}
+.name-row label{
+  padding-right: 0.5rem;
+  flex: 1;
+}
+.name-row input{
+  flex: 2;
+}
+.form-container  .button-container{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap:  2rem;
+}
+.Ijsboutique img{
+  max-height: 20rem;
+}
+
+/* youtube */
+.youtube{
+  margin: 10rem 0 9rem;
+}
+.iframe{
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;;
+}
+
+
+
+/* *********************************************** */
+
+/* Media Queries */
+@media (min-width: 1024px) {
+  .grid{
+  height: 100vh;
+  grid-template-columns: 10rem 1fr 1fr 10rem;
+  grid-template-rows: 1fr 10rem 1fr 15rem 10rem;
+  grid-gap: 3px;
+  grid-template-areas: 
+  ". h h ."
+  ". n n ."
+  ". m m ." 
+  " .s s ."
+  ". f f .";
+  } 
+
+  body{
+    font-size: 2rem;
+  }
+  .bigscreen{
+    display: block;
+  }
+  .button-container{
+    width: 30rem;
+  }
+  .button{
+    font-size: 2rem;
+    width: 30rem;
+    padding: 1rem;
+  }
+  
+  /* Header */
+  header img{
+    max-height: 480px;
+  }
+
+  /* NavBar */
+  .navbar li{
+    font-size:  5rem;
+    margin: 6rem;
+  }
+
+  /* main container-01 */
+  main .flexcontainer-01{
+    flex-direction: row-reverse;
+  } 
+  .flexitem-0101{
+    flex: 4;
+    margin-left: 2rem;
+  }
+  .flexitem-0102{
+    flex: 1;
+  }
+
+  /* main container-02 */
+  main .flexcontainer-02{
+    margin: 9rem 3rem 20rem; 
+  }
+  .flexitem-0202{
+    max-width: 70%;
+  }
+  
+  /* social-media*/
+  .social-media img{
+    height: 9rem;
+  }
+  .social-media img:hover{
+    height: 7rem;
+  }
+
+  /* footer */
+  .footer a {
+    font-size: 2.5rem;
+  }
+  .footer-flexcontainer div{
+    font-size: 1.5rem;
+  }
+  
+  /* page 02 smaken */
+  .smakenlijst{
+    width: 50rem;
+  }
+  /* youtube */
+  .iframe{
+    height: 50rem;
+    border-radius: 1rem;
+    margin:20rem 0 40rem;
+  }
+  
+  /* page 03 Contact */
+  .form-container{
+    max-width: 80%;
+  }
+  .name-row input{
+    font-size: 2rem;
+  }
+  .Ijsboutique{
+   margin:30rem 0 40rem;
+  }
+  .Ijsboutique img{
+    max-height: 50rem;
+  }
+
+}
+
+
+
+
+
+
+
